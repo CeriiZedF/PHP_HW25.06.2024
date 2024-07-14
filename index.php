@@ -1,8 +1,6 @@
-
 <?php
 require 'User.php';
 
-// Створення об'єктів User
 $users = [
     new User("Іван Іванов", "ivan@example.com"),
     new User("Петро Петренко", "petro@example.com"),
