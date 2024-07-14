@@ -2,7 +2,6 @@
 <?php
 require 'User.php';
 
-// Список користувачів як у index.php
 $users = [
     new User("Іван Іванов", "ivan@example.com"),
     new User("Петро Петренко", "petro@example.com"),
@@ -11,11 +10,9 @@ $users = [
     new User("Анна Анненко", "anna@example.com"),
 ];
 
-// Отримання користувача за індексом з GET-запиту
 $userIndex = isset($_GET['user']) ? (int)$_GET['user'] : 0;
 $user = $users[$userIndex];
 
-// Імітація історії покупок
 $purchaseHistory = [
     ['date' => '2024-01-01', 'sessionId' => 1],
     ['date' => '2024-02-15', 'sessionId' => 2],
