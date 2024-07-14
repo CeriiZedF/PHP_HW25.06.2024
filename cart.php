@@ -1,9 +1,7 @@
-
 <?php
-// Отримання sessionId з GET-запиту
+
 $sessionId = isset($_GET['session']) ? (int)$_GET['session'] : 0;
 
-// Імітація списку продуктів для кожної сесії
 $sessions = [
     1 => ['product1', 'product2', 'product3'],
     2 => ['product4', 'product5'],
